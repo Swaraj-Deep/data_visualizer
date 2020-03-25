@@ -1,0 +1,156 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+
+<style>
+    .loader_hist_animation {
+        width: 50%;
+        height: 50%;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md pt-3">
+            <p class="font-weight-bold border border-primary rounded text-center text-primary container-fluid py-2">
+                Draw Histogram, Kernel Density Estimation and Box Plot
+            </p>
+            <div class="row" id="histogram">
+                <div class="col col-md">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="x-axis">X-Axis</label>
+                        </div>
+                        <select class="custom-select" id="x-axis">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="x-label">X-Label</label>
+                        </div>
+                        <input type="text" class="form-control mr-2" id="x-label" aria-describedby="x-label" required>
+                        <div class="input-group-append">
+                            <label class="input-group-text" for="y-label">Y-Label</label>
+                        </div>
+                        <input type="text" class="form-control" id="y-label" aria-describedby="y-label" required>
+                    </div>
+                </div>
+            </div>
+            <div id="add_btn">
+                <div class="row">
+                    <div class="col col-md">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="graph_type_hist">Select Graph Type</label>
+                            </div>
+                            <select class="custom-select" id="graph_type_hist">
+                                <option selected value=0>Histogram</option>
+                                <option value=1>Box Plot</option>
+                                <option value=2>Kernel Density Estimation</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary container-fluid text-center"
+                                    id="histogram_btn">
+                                    Generate Graph
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="alert-histogram">
+
+            </div>
+            <div class="col col-md pt-2">
+                <div id="loader_hist" class="float-left">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md pt-3">
+            <p class="font-weight-bold border border-primary rounded text-center text-primary container-fluid py-2">
+                Draw Other Graphs
+            </p>
+            <div class="row" id="other_graphs">
+                <div class="col col-md">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="x-axis_other">X-Axis</label>
+                        </div>
+                        <select class="custom-select mr-3" id="x-axis_other">
+
+                        </select>
+                        <div class="input-group-append">
+                            <label class="input-group-text" for="y-axis_other">Y-Axis</label>
+                        </div>
+                        <select class="custom-select" id="y-axis_other">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="x-label_other">X-Label</label>
+                        </div>
+                        <input type="text" class="form-control mr-2" id="x-label_other" aria-describedby="x-label"
+                            required>
+                        <div class="input-group-append">
+                            <label class="input-group-text" for="y-label_other">Y-Label</label>
+                        </div>
+                        <input type="text" class="form-control" id="y-label_other" aria-describedby="y-label" required>
+                    </div>
+                </div>
+            </div>
+            <div id="add_btn_other mb-3">
+                <div class="row">
+                    <div class="col col-md">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="graph_type">Select Graph Type</label>
+                            </div>
+                            <select class="custom-select" id="graph_type">
+                                <option selected value=0>Line Chart</option>
+                                <option value=1>Scatter Chart</option>
+                                <option value=2>Hexagonal Chart</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary container-fluid text-center"
+                                    id="other-graph-btn">
+                                    Generate Graph
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="alert-other-graphs" class="py-3">
+
+            </div>
+            <div class="col col-md pt-2">
+                <div id="loader_other" class="float-left">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block jquery %}
+<script src="static/javascript/graphs.js"></script>
+{% endblock %}

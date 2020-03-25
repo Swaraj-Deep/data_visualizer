@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col">
+            <div class="my-3">
+                <div class="form-group my-3" id="form">
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="file_input">
+                            <label for="file_input" id="file_input_label" class="custom-file-label">
+                                Select File
+                            </label>
+                        </div>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" id="upload_btn">
+                                Upload File
+                            </button>
+                        </div>
+                    </div>
+                    <div id="alert_wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">We got your data!</h5>
+                        <button type="button" class="close" id="datamodalclose" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body table-responsive">
+                        <table class="table table-hover table-dark px-3 py-3 rounded" style="max-width: 470px;">
+                            <thead>
+                                <tr id="title">
+                                </tr>
+                            </thead>
+                            <tbody id="data_row">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <p class="font-weight-bold text-center">
+                            Close this to check what are the things you can do with your data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+    {% block jquery %}
+    <script src="static/javascript/fileupload.js"></script>
+    {% endblock %}

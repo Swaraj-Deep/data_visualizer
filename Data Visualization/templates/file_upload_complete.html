@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container-fluid py-3">
+    <div class="row">
+        <div class="col-md" id="alert-wrapper">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p class="font-weight-bold border border-primary rounded text-center text-primary container-fluid py-2">
+                Select Columns Here
+            </p>
+            <div class="container-fluid" id="sel_col">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p class="font-weight-bold border border-primary rounded text-center text-primary container-fluid py-2">
+                Filter columns based on row data.
+            </p>
+            <div class="container-fluid" id="filter_single_row">
+
+            </div>
+            <div id="alert-filter-single-row">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p class="font-weight-bold border border-primary rounded text-center text-primary container-fluid py-2">
+                Filter columns based on comparing row data.
+            </p>
+            <div class="container" id="filter_comparing_row">
+
+            </div>
+            <div id="alert-filter-comparing-row">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block jquery %}
+<script src="static/javascript/file_upload_complete.js"></script>
+{% endblock %}

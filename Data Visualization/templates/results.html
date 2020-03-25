@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> {{ the_title }} </title>
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css" media="screen" />
+    <script src="https://kit.fontawesome.com/a218c8aa78.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script>
+        function check_link(element) {
+            if (element == window.location.href) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="d-flex flex-column sticky-footer-wrapper">
+        <main class="flex-fill">
+            <div class="container-fluid px-2 py-2" id="alert-wrapper">
+
+            </div>
+            <div class="container px-2 py-3">
+                <table class="table table-hover table-dark table-stripped table-bordered rounded table-responsive-md">
+                    <thead>
+                        <tr id="title">
+                        </tr>
+                    </thead>
+                    <tbody id="data_row">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-secondary bg-secondary">
+                <div class="container-fluid">
+                    <p style="color : white;">
+                        Made with <i class="fas fa-heart fa-fw" style="color : red;"></i> & <i
+                            class="fas fa-coffee fa-fw"></i> By Swaraj.
+                    </p>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class=" mb-3 col-md-auto">
+                            <div class="container-fluid">
+                                <p class="text-justify text-white">
+                                    Great things are waiting just a click away!!. Subscribe to our Newsletter for more
+                                    details.
+                                </p>
+                            </div>
+                            <div class="container-fluid input-group">
+                                <input type="text" class="form-control" placeholder="Enter Email Address"
+                                    aria-label="Enter Email Address" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe <i
+                                            class="fa fa-envelope fa-fw"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container col-sm-auto">
+                            <div class="col-auto">
+                                <ul class="nav font-weight-bold">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#"> About Us </a>
+                                        <ul class="nav flex-column font-weight-normal">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Our Mission </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> What Happens to your data </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> How to control your data </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#"> Contact Us </a>
+                                        <ul class="nav flex-column font-weight-normal">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Mail Us </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Talk To us </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Message Us </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#"> Need Help </a>
+                                        <ul class="nav flex-column font-weight-normal">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Filtering Data </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Creating Graphs </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-white" href="#"> Others </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid bg-secondary navbar-secondary text-center py-3">
+                <a href="#"><i class="fab fa-facebook fa-fw" data-toggle="tooltip" data-placement="top" title="Facebook"
+                        style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger fa-fw" data-toggle="tooltip" data-placement="right"
+                        title="Messenger" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-fw" data-toggle="tooltip" data-placement="top"
+                        title="Github" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-fw" data-toggle="tooltip" data-placement="top"
+                        title="Google plus" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-fw" data-toggle="tooltip" data-placement="top"
+                        title="Instagram" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-fw" data-toggle="tooltip" data-placement="top" title="Linkedin"
+                        style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-medium fa-fw" data-toggle="tooltip" data-placement="top" title="Medium"
+                        style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-fw" data-toggle="tooltip" data-placement="top" title="Youtube"
+                        style="color: white;"></i></a>
+                <a href="#"><i class="far fa-envelope fa-fw" data-toggle="tooltip" data-placement="top" title="Mail"
+                        style="color: white;"></i></a>
+            </div>
+            <div class="container-fluid bg-dark text-white text-center py-3">
+                <p> Copyright &copy Swaraj Deep 2020</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="static/javascript/results.js"></script>
+</body>
+
+</html>
