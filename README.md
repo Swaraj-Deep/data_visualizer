@@ -1,37 +1,50 @@
+
 # Data Visualizer
 
-This data visualizer is made with python which uses data from CSV Files. This can filter the CSV data and generate reports according to the filtering criteria. You can also visualize the reports using barplots, density plots etc.
+Using this webapp you can filter CSV files and also visualize the results.
 
-## Requirements
+## Prerequisites
 
-[python version 3.x](https://www.python.org/download/releases/3.0/)  
-[flask version 1.1.x](https://pypi.org/project/Flask/)  
-[pandas](https://pandas.pydata.org/)  
-[matplotlib](https://matplotlib.org/)
+You must have python installed on your machines.  
+
+[python](https://docs.python-guide.org/starting/install3/linux/)  
+
+Apart from python, you will need following packages to run this.
 
 
-## How to Install
+[pandas](https://pandas.pydata.org/docs/getting_started/install.html)  
+[matplotlib](https://matplotlib.org/users/installing.html)  
+[flask](https://flask.palletsprojects.com/en/master/installation/)  
 
-```bash
-sudo apt-get install python3.x python3-pip  
-pip3 install flask
-pip3 install pandas
-pip3 install matplotlib
-```
-Once you have run the above commands you are ready to go. Clone this repopsitory on your system using the following command:
+## Installation
 
-``` git
+Once you have installed all the dependencies you simply need to clone the repository to your local machine using 
+```git
 git clone git@github.com:Swaraj-Deep/data_visualizer.git
 ```
 
-## Exceution
+## Usage
 
-Once the repository is cloned go to the Data Visualization folder and run the [main.py](/Data%20Visualization/main.py) file using the following command:
+Once the repository is cloned, move to the Data Visualization directory and run the [main.py](/Data%20Visualization/main.py) file using following command
 
-``` bash
+```bash
 python3 main.py
 ```
 
-## Licence
+Now copy the address from the command line and paste it in the browser.
 
+## Screen shots
+
+![image](proj_data_visualizer/ezgif.com-gif-maker1.gif)
+![image](proj_data_visualizer/ezgif.com-gif-maker.gif)
+
+
+## Future Scope
+
+Can be extend to serve web APIs. The Graph images can be more refined and more types of graphs can be added. More criterias can be added to filter the data.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
 [MIT](https://opensource.org/licenses/MIT)
